@@ -15,6 +15,10 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -69,6 +73,53 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-0">Scientific Researcher</h3>
+                            <div class="subheading mb-3">TeCSAR Lab.</div>
+                            <p>Developing a self-supervised training framework tailored for transformer-based architectures in the realm of computer vision, with a focus on enhancing contextual understanding in 2/3-D pose estimation tasks.</p>
+                            <ul class="fa-ul mb-0">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                </li>
+                                Developed a discrete Variational Auto-Encoder (dVAE) to accurately capture the dynamics of pose movement over time in a discrete latent space, enabling effective classification of pose movements.
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                </li>
+                                Training transformer-based models, including those based on ViT and BERT-like architectures, through generative and contrastive self-supervised approaches. This involves masked input frame generation and frame sequence verification.
+                            </ul>
+                            <p>Engaging in MLIR (Multi-Level Intermediate Representation) projects to lower machine learning models for custom hardware designed on FPGA as a potential target platform.</p>
+                            <ul class="fa-ul mb-0">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                </li>
+                                Examining and evaluating open-source initiatives like CIRCT alongside pre-existing MLIR batteries, such as torch/tensorflow-mlir.
+                            </ul>
+                            <p>
+                                Designed and implemented an end-to-end scalable, intelligent advanced video surveillance vision pipeline, achieving a system performance of 23 frames per second (FPS) for eight concurrent cameras at Full HD resolution.
+                                <a href="https://www.youtube.com/watch?v=uCjvwCZXi6g" target="_blank">Demo.</a>
+                            </p>
+                            <ul class="fa-ul mb-0">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                </li>
+                                Utilized four deep learning models for the purposes of detection, re-identification, body pose estimation, and segmentation.
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                </li>
+                                Trained a person re-ID model on large datasets, including DukeMTC, CUHK03, and Market1501, enhancing its accuracy for mixed-precision inference.
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                </li>
+                                Used PyTorch Multiprocessing Process and Queues to parallelize models inference.
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                </li>
+                                Leveraged the Flask module to construct a RESTful API that serves an ML model for re-identifying individuals across different camera clients.
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Aug 2021 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0">Lead Edge/IoT Deep Learning Engineer</h3>
                             <div class="subheading mb-3">ForesightCares Inc.</div>
                             <p>
@@ -94,35 +145,6 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Deep Learning Engineer</h3>
-                            <div class="subheading mb-3">TeCSAR Lab.</div>
-                            <p>
-                                Designed and implemented an end-to-end scalable, intelligent advanced video surveillance vision pipeline, achieving a system performance of 23 frames per second (FPS) for eight concurrent cameras at Full HD resolution.
-                                <a href="https://www.youtube.com/watch?v=uCjvwCZXi6g" target="_blank">Demo.</a>
-                            </p>
-                            <ul class="fa-ul mb-0">
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                                </li>
-                                Utilized four deep learning models for the purposes of detection, re-identification, body pose estimation, and segmentation.
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                                </li>
-                                Trained a person re-ID model on large datasets, including DukeMTC, CUHK03, and Market1501, enhancing its accuracy for mixed-precision inference.
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                                </li>
-                                Used PyTorch Multiprocessing Process and Queues to parallelize models inference.
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                                </li>
-                                Leveraged the Flask module to construct a RESTful API that serves an ML model for re-identifying individuals across different camera clients.
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Aug 2021 - Jun 2022</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
                             <h3 class="mb-0">Graduate Student Research Assistant</h3>
                             <div class="subheading mb-3">Shout! Media Productions</div>
                             <p>Designed and developed Agile Temporal Convolutional Neural Network (ATCN), a scalable deep learning model with adjustable hyper-parameters to enable time series analysis for resource-constrained edge systems.</p>
@@ -136,7 +158,6 @@
                                 </li>
                                 Used data augmentation techniques, such as jittering, magnitude warping, window warping, and scaling, to enhance model robustness on the UCR 2018 dataset.
                             </ul>
-                            <p></p>
                             <p>Invented a customized multi-head attention Temporal Convolutions Network (TCN) for efficiently and precisely predicting highway vehicle trajectories for highway and self-driving cars safety applications.</p>
                             <ul class="fa-ul mb-0">
                                 <li>
@@ -144,7 +165,6 @@
                                 </li>
                                 Redesigned dilated TCN with separable depth-wise convolutional neural network to reduce the model size and complexity by approximately 33.16% compared to LSTM-based approaches.
                             </ul>
-                            <p></p>
                             <p>
                                 Implemented HW/CW co-design for application-specific architectures, accelerating EfficientNet and MobileNetV2 inference on Xilinx embedded and cloud FPGAs. Achieved an improvement of up to 8.6x FPS/W.
                                 <a href="https://www.youtube.com/watch?v=AxtroiRr__M" target="_blank">Demo</a>
@@ -159,7 +179,6 @@
                                 </li>
                                 Hardware level optimization includes pipelining, window buffering, etc.
                             </ul>
-                            <p></p>
                             <p>Designed a recurrent deep learning solution for real-time edge processing in reliability modeling of Si-MOSFET power electronics converters.</p>
                             <ul class="fa-ul mb-0">
                                 <li>
@@ -171,7 +190,6 @@
                                 </li>
                                 Utilized a NASA dataset for training and validation, enhancing the accuracy and efficiency of the system.
                             </ul>
-                            <p></p>
                             <p>Experienced in administration, system driver configuration, and resource allocation, including hardware RAID setup for multiple servers with server-class GPUs such as P100, V100, RTX 6000. Skilled in configuring deep learning frameworks like TensorFlow and PyTorch to optimize performance across various server</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Aug 2017 - Aug 2021</span></div>
@@ -373,8 +391,4 @@
             </section>
         </div>
     </body>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
 </html>
